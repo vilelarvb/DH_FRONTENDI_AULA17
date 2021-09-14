@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(27, 27, 192);
+}
+
+
+img {
+  height: 300px;
+  width: 300px;
+  margin: 100px;
+  animation: deslizar 10s normal 
+}
+
+@keyframes deslizar {
+  0% { opacity: 0%; }
+  25% { opacity: 25%; transform: translate(80px) rotate(25deg); }
+  50% { opacity: 50%; transform: translate(120px) rotate(50deg); }
+  65% { opacity: 75%; transform: translate(180px) rotate(75deg); }
+  75% { opacity: 100%; transform: translate(250px) rotate(100deg);}
+  85% { opacity: 75%; transform: translate(300px) rotate(150deg); }
+  100% { opacity: 100%; transform: translate(450px) rotate(200deg);}
+}
+
+button {
+  background-color: rgb(213, 235, 15);
+  height: 50px;
+  width: 150px;
+  margin: 10px;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(27, 27, 192);
+}
